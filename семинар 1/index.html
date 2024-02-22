@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="background-style">
+        <div class = "h1">
+            <h1>Тихонов Данила Алексеевич</h1>
+        </div>
+    </header>
+    <div class = "table">
+        <table id = "dataTable">
+            <tr><th>Изображение</th><th>Текст</th></tr>
+            <tr><td><img src="1.jpg"></td><td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus iaculis mi non ante venenatis sagittis. Duis lobortis lobortis lectus, in sodales lectus aliquam et. Nunc tortor turpis, pellentesque consectetur erat ac, semper bibendum erat. Quisque rhoncus dui blandit massa fringilla dignissim. Integer eget dui in dui consequat convallis quis et mauris. Fusce eu lorem turpis. Vivamus a pharetra nisi. Cras fermentum sagittis lacus, at ullamcorper metus commodo ut. Nunc odio justo, aliquet id rutrum vitae, porta feugiat justo.
+            </td></tr>
+            <tr><td><img src = "2.jpg"></td><td>In sit amet velit lectus. Mauris sed justo ornare, aliquam nulla porttitor, rutrum dolor. Vestibulum laoreet gravida velit at lobortis. Praesent dignissim lobortis rhoncus. Nam pretium mi id nulla maximus ornare. Vivamus id vehicula risus. Ut eros justo, tempor vitae egestas nec, mattis a lectus. Sed eu nibh posuere, commodo lorem id, ullamcorper tellus. Pellentesque gravida pellentesque enim vel aliquet. Nunc in elit eu velit posuere consectetur.
+            </td></tr>
+            <tr><td><img src = "3.jpg"></td><td>Donec maximus, urna quis dapibus tristique, diam arcu aliquet leo, quis lacinia nulla neque sed magna. Maecenas eu ipsum tristique, pharetra elit vel, dignissim ligula. Suspendisse potenti. Maecenas magna arcu, fermentum ac erat eget, hendrerit vestibulum justo. Duis molestie sem ut eros maximus ultricies. Nunc placerat turpis luctus velit eleifend scelerisque. Donec varius pharetra enim, vel venenatis lectus ornare ac.
+            </td></tr>
+            </table>
+    </div>
+    <div class = "flex"> 
+        <textarea name="textarea" id="textarea" cols="30" rows="10"></textarea>
+        <button name="button" id = "buttonAddText">Отправить</button>
+    </div>
+    <footer class="background-style">
+        <div class = "h3">
+        <h3> Разработка веб-приложения 2024</h3>
+        </div>
+    </footer>
+    <script>
+        function addText(){
+            var table = document.getElementById("dataTable");
+            var newRow = table.insertRow();
+            var cell1 = newRow.insertCell(0);
+            var cell2 = newRow.insertCell(1);
+
+            var text = document.getElementById("textarea").value;
+
+            cell1.innerHTML = '<img src = 1.jpg>';
+            cell2.innerHTML = '<p>' + text + '<p>';
+        }
+        var buttonAddText = document.getElementById("buttonAddText");
+        buttonAddText.addEventListener("click", addText);
+    </script>
+</body>
+</html>

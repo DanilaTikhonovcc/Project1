@@ -1,0 +1,41 @@
+.background-style {
+    background-color: orange;
+    display: flex;
+}
+.flex {
+    display: flex;
+    justify-content: center;
+}
+
+textarea {
+    flex-grow: 1;
+}
+
+button {
+    width: 15%;
+}
+.h1 {
+    margin: auto;
+}
+
+.h3 {
+    margin: auto;
+}
+
+body {
+    margin: auto;
+    background-color: lemonchiffon;
+}
+
+
+.table {
+    display: flex;
+    width: 80%;
+    padding: 5%;
+}
+
+img {
+    width: 250px;
+    height: 250px;
+}
+
